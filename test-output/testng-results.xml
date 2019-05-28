@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Attach testcases screenshots to htmlreport]]>
+    </line>
+    <line>
+      <![CDATA[all the pass screenshots are attached]]>
+    </line>
+    <line>
+      <![CDATA[html reports is done]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="228207" started-at="2019-05-24T13:15:47Z" finished-at="2019-05-24T13:19:36Z">
+  <suite name="Default suite" duration-ms="95874" started-at="2019-05-28T18:24:49Z" finished-at="2019-05-28T18:26:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="228207" started-at="2019-05-24T13:15:47Z" finished-at="2019-05-24T13:19:36Z">
+    <test name="Default test" duration-ms="95874" started-at="2019-05-28T18:24:49Z" finished-at="2019-05-28T18:26:25Z">
       <class name="com.testcaseexecution.TestRunner">
-        <test-method status="PASS" signature="intialexecution()[pri:0, instance:com.testcaseexecution.TestRunner@5e5792a0]" name="intialexecution" is-config="true" duration-ms="1785" started-at="2019-05-24T13:15:46Z" finished-at="2019-05-24T13:15:47Z">
+        <test-method status="PASS" signature="intialexecution()[pri:0, instance:com.testcaseexecution.TestRunner@685cb137]" name="intialexecution" is-config="true" duration-ms="3299" started-at="2019-05-28T18:24:46Z" finished-at="2019-05-28T18:24:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialexecution -->
-        <test-method status="PASS" signature="baseexecution()[pri:0, instance:com.testcaseexecution.TestRunner@5e5792a0]" name="baseexecution" duration-ms="228172" started-at="2019-05-24T13:15:47Z" finished-at="2019-05-24T13:19:36Z">
+        <test-method status="PASS" signature="baseexecution()[pri:0, instance:com.testcaseexecution.TestRunner@685cb137]" name="baseexecution" duration-ms="93734" started-at="2019-05-28T18:24:49Z" finished-at="2019-05-28T18:26:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseexecution -->
+        <test-method status="PASS" signature="screenshotattach(org.testng.ITestResult)[pri:0, instance:com.testcaseexecution.TestRunner@685cb137]" name="screenshotattach" is-config="true" duration-ms="2056" started-at="2019-05-28T18:26:23Z" finished-at="2019-05-28T18:26:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=baseexecution status=SUCCESS method=TestRunner.baseexecution()[pri:0, instance:com.testcaseexecution.TestRunner@685cb137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Attach testcases screenshots to htmlreport]]>
+            </line>
+            <line>
+              <![CDATA[all the pass screenshots are attached]]>
+            </line>
+            <line>
+              <![CDATA[html reports is done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- screenshotattach -->
       </class> <!-- com.testcaseexecution.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

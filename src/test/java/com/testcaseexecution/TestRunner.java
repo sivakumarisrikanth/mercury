@@ -12,12 +12,15 @@ public class TestRunner extends Basecls {
 	CommonMethods cm=new CommonMethods();
 	@Test
 	public void baseexecution() {
+		logger=report.createTest("mercury login");
+		logger.info("mercury login with valid creditionls");
   driver= cm.GetBrowser("Chrome");
-  tcs.getscreens(driver);
+ // tcs.getscreens(driver);
   // cm.browserclose();
   Webcls cls= PageFactory.initElements(driver,Webcls.class );
    cls.pagelogin();
-   tcs.getscreens(driver);
+   logger=report.createTest("login is completed successfully");
+   //tcs.getscreens(driver);
 }
 	
 }
