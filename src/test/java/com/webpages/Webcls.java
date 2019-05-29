@@ -57,17 +57,19 @@ public class Webcls extends Basecls{
 		clickcontinue.click();
 		
 	}
-	@FindBy(xpath="//table[@border=\"0\"]/tbody/tr[4]/td")List<WebElement> allelements;
+	@FindBy(xpath="(//font[contains(text(),'SELECT')]/preceding::table)[5] ")WebElement allelements;
 	public void departflights() {
-		int count=allelements.size();
-		System.out.println(count);
-		for(int i=0;i<count-1;i++) {
-			String textofelements=allelements.get(i).getText();
-			System.out.println(textofelements);
+		String text=allelements.getText();
+		System.out.println(text);
+		//int count=allelements.size();
+	//	System.out.println(count);
+		//for(int i=0;i<count-1;i++) {
+			////String textofelements=allelements.get(i).getText();
+			//System.out.println(textofelements);
 		}
 		
 		
 		
 	}
 
-}
+
