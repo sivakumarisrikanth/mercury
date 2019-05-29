@@ -8,6 +8,6 @@ public class Dropdownmethod {
 	Select sel=new Select(element);
 	sel.selectByIndex(index);
 	}
-	public void selectvaluefromdropdownbytext(Web)
-
+	
+	
 }
