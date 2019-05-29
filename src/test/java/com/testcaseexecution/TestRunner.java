@@ -21,6 +21,9 @@ public class TestRunner extends Basecls {
    cls.pagelogin();
    logger=report.createTest("login is completed successfully");
    //tcs.getscreens(driver);
+   cls.flight_details();
+   cls.preferences();
+   cls.departflights();
 }
 	
 }

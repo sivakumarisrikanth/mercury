@@ -11,6 +11,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.webreusemethods.Dropdownmethod;
 import com.webreusemethods.Exelload;
 import com.webreusemethods.Takesscreens;
 
@@ -19,10 +20,12 @@ public class Basecls {
 	public static Takesscreens tcs;
 	public static ExtentTest logger;
 	public static ExtentReports report;
+	public static Dropdownmethod dropdown;
 	@BeforeSuite
 	public void intialexecution() {
 		eload=new Exelload();
 		tcs=new Takesscreens();
+		 dropdown=new Dropdownmethod();
 		System.out.println("exel is loaded");
 		ExtentHtmlReporter extent=new ExtentHtmlReporter("E:\\srikanth\\Mercury\\ExtentReports\\MERCURYHTMLREPORTS"+Takesscreens.gettimestamp()+".html");
 		 report=new ExtentReports();

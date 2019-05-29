@@ -1,8 +1,10 @@
 package com.webreusemethods;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -58,4 +60,6 @@ public class CommonMethods extends Basecls {
     public void browserclose() {
     	driver.quit();
     }
-}
+
+
+   }
