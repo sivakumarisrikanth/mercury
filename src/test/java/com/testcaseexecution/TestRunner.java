@@ -18,6 +18,8 @@ public class TestRunner extends Basecls {
   Webcls cls= PageFactory.initElements(driver,Webcls.class );
    cls.pagelogin();
    tcs.getscreens(driver);
+   
+   System.out.println("GIt Testing");
 }
 	
 }
