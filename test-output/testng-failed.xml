@@ -6,6 +6,8 @@
       <class name="com.testcaseexecution.TestRunner">
         <methods>
           <include name="baseexecution"/>
+          <include name="intialexecution"/>
+          <include name="screenshotattach"/>
         </methods>
       </class> <!-- com.testcaseexecution.TestRunner -->
     </classes>

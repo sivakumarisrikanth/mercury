@@ -25,8 +25,8 @@ public class Exelload  {
 		return xsw.getSheet(Sheetname).getRow(rownum).getCell(cellnum).getStringCellValue();
 		
 	}
-	public String getnumericdata(String Sheetname,int rownum,int cellnum) {
-		return xsw.getSheet(Sheetname).getRow(rownum).getCell(cellnum).getStringCellValue();
+	public double getnumericdata(String Sheetname,int rownum,int cellnum) {
+		return  xsw.getSheet(Sheetname).getRow(rownum).getCell(cellnum).getNumericCellValue();
 		
 	}
 }

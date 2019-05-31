@@ -11,20 +11,20 @@
       <![CDATA[html reports is done]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="174193" started-at="2019-05-29T15:01:34Z" finished-at="2019-05-29T15:04:29Z">
+  <suite name="Default suite" duration-ms="39454" started-at="2019-05-31T11:49:28Z" finished-at="2019-05-31T11:50:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="174193" started-at="2019-05-29T15:01:34Z" finished-at="2019-05-29T15:04:29Z">
+    <test name="Default test" duration-ms="39454" started-at="2019-05-31T11:49:28Z" finished-at="2019-05-31T11:50:08Z">
       <class name="com.testcaseexecution.TestRunner">
-        <test-method status="PASS" signature="intialexecution()[pri:0, instance:com.testcaseexecution.TestRunner@685cb137]" name="intialexecution" is-config="true" duration-ms="13438" started-at="2019-05-29T15:01:21Z" finished-at="2019-05-29T15:01:34Z">
+        <test-method status="PASS" signature="intialexecution()[pri:0, instance:com.testcaseexecution.TestRunner@685cb137]" name="intialexecution" is-config="true" duration-ms="928" started-at="2019-05-31T11:49:27Z" finished-at="2019-05-31T11:49:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialexecution -->
-        <test-method status="PASS" signature="baseexecution()[pri:0, instance:com.testcaseexecution.TestRunner@685cb137]" name="baseexecution" duration-ms="169150" started-at="2019-05-29T15:01:35Z" finished-at="2019-05-29T15:04:24Z">
+        <test-method status="PASS" signature="baseexecution()[pri:0, instance:com.testcaseexecution.TestRunner@685cb137]" name="baseexecution" duration-ms="28660" started-at="2019-05-31T11:49:28Z" finished-at="2019-05-31T11:49:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseexecution -->
-        <test-method status="PASS" signature="screenshotattach(org.testng.ITestResult)[pri:0, instance:com.testcaseexecution.TestRunner@685cb137]" name="screenshotattach" is-config="true" duration-ms="4433" started-at="2019-05-29T15:04:24Z" finished-at="2019-05-29T15:04:29Z">
+        <test-method status="PASS" signature="screenshotattach(org.testng.ITestResult)[pri:0, instance:com.testcaseexecution.TestRunner@685cb137]" name="screenshotattach" is-config="true" duration-ms="10770" started-at="2019-05-31T11:49:57Z" finished-at="2019-05-31T11:50:08Z">
           <params>
             <param index="0">
               <value>

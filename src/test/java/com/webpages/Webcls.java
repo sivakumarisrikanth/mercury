@@ -6,10 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.testcaseexecution.Basecls;
+import com.webreusemethods.CommonMethods;
 import com.webreusemethods.Dropdownmethod;
 import com.webreusemethods.Exelload;
 
 public class Webcls extends Basecls{
+	CommonMethods cm=new CommonMethods();
 	Dropdownmethod dropdown=new Dropdownmethod();
 	Exelload eload=new Exelload();
 	//pageloginobjects
@@ -67,6 +69,56 @@ public class Webcls extends Basecls{
 			////String textofelements=allelements.get(i).getText();
 			//System.out.println(textofelements);
 		}
+	@FindBy(xpath="//a[contains(text(),'SIGN-OFF')]")WebElement sign_off;
+	public void sign_offtab() {
+		sign_off.click();
+	}
+	
+	@FindBy(xpath="//a[contains(text(),'REGISTER')]")WebElement register;
+	@FindBy(xpath="//input[@name='firstName']")WebElement firstname;
+	@FindBy(xpath="//input[contains(@name,'lastName')]")WebElement lastname;
+	@FindBy(xpath="//input[contains(@name,'phone')]")WebElement phonenum;
+	@FindBy(xpath="//input[contains(@name,'userName')]")WebElement email;
+	@FindBy(xpath="//input[contains(@name,'address1')]")WebElement address;
+	@FindBy(xpath="//input[contains(@name,'city')]")WebElement city;
+	@FindBy(xpath="//input[contains(@name,'state')]")WebElement state;
+	@FindBy(xpath="//input[contains(@name,'postal')]")WebElement postalcode;
+	@FindBy(xpath="//select[contains(@name,'country')]")WebElement country;
+	@FindBy(xpath="//input[contains(@name,'email')]")WebElement username_mail;
+	@FindBy(xpath="//input[contains(@name,'password')]")WebElement password_mail;
+	@FindBy(xpath="//input[contains(@name,'confirmPassword')]")WebElement confirmpassword;
+	
+	public void register_details() {
+		
+		String Firstname=eload.getstringdata("REGISTER",1, 0);
+		String Lastname=eload.getstringdata("REGISTER",1, 1);
+		//CharSequence[] Phone=eload.getnumericdata("REGISTER",1, 3);
+		String Email=eload.getstringdata("REGISTER",1, 8);
+		String Address=eload.getstringdata("REGISTER",1, 5);
+		String State=eload.getstringdata("REGISTER",1, 6);
+		String City=eload.getstringdata("REGISTER",1, 4);
+	//	double Postalcode=eload.getnumericdata("REGISTER",1, 7);
+		String Country=eload.getstringdata("REGISTER",1,12 );
+		String Usermail=eload.getstringdata("REGISTER",1, 9);
+		String Passmail=eload.getstringdata("REGISTER",1,10 );
+		String Confirmpass=eload.getstringdata("REGISTER",1, 11);
+
+		
+		register.click();
+		//firstname.sendKeys(Firstname);
+		cm.passdata("//a[contains(text(),'REGISTER')]",Firstname);
+		/*lastname.sendKeys(Lastname);
+		//phonenum.sendKeys(Phone);
+		email.sendKeys(Email);
+		address.sendKeys(Address);
+		city.sendKeys(City); 
+		state.sendKeys(State);
+		//postalcode.sendKeys("Postalcode");
+		country.sendKeys(Country);
+		username_mail.sendKeys(Usermail);
+		password_mail.sendKeys(Passmail);
+		confirmpassword.sendKeys(Confirmpass);*/
+	}
 		
 		
 		
