@@ -62,8 +62,7 @@ public class Comparetest extends Dropdownmethod {
 	public void dropdowntext() {
 		clickregister.click();
 		Select sel=new Select(dropdown1);
-		//WebElement dropdown = driver.findElement(By.xpath("//select[@id='ddladult1']")); 
-       // Select select = new Select(dropdown); 
+		
        java.util.List<WebElement> options = sel.getOptions(); 
         for(WebElement item:options) 
         { 
