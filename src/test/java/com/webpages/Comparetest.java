@@ -26,7 +26,7 @@ public class Comparetest extends Dropdownmethod {
 		//System.out.println(title);
 		Assert.assertEquals(test, "your destination");
 		System.out.println("test is matched");
-	/*	if(test=="your destination") {
+	/*	if(test."your destination") {
 			System.out.println("test is matched");
 		}
 		else
